@@ -7,6 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "watchify lib/countdown.es6.js -v -o ./lib/countdown.bundle.js -t [ babelify --presets [ es2015 ] ]"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdailly/ds-countdown.git"
+  },
+  "homepage": "https://github.com/sdailly/ds-countdown",
+  "bugs": {
+    "url": "https://github.com/sdailly/ds-countdown/issues"
+  },
+  "main": "lib/countdown.es6.js",
   "keywords": [
     "countdown",
     "timer",
