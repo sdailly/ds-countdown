@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/sdailly/ds-countdown/issues"
   },
-  "main": "lib/countdown.es6.js",
+  "main": "lib/countdown.bundle.js",
   "keywords": [
     "countdown",
     "timer",
