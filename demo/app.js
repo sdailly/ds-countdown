@@ -1,4 +1,4 @@
-var Countdown = require('../lib/countdown.bundle.js');
+const Countdown = require('../lib/countdown.es6.js');
 
 document.addEventListener('DOMContentLoaded', function() {
   new Countdown({

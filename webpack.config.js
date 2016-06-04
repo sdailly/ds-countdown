@@ -1,15 +1,20 @@
 module.exports = {
   entry: {
-    lib: ['./lib/countdown.es6.js'],
     demo: './demo/app.js',
   },
   output: {
     path: __dirname,
-    filename: '[name]/countdown.bundle.js',
+    filename: '[name]/demo.bundle.js',
   },
   module: {
     loaders: [
-      { test: /\.js$/,  exclude: /(node_modules|bower_components)/, loader: 'babel' },
+      { test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+         query: {
+           presets: ['es2015']
+        }
+      },
     ],
   },
 };
