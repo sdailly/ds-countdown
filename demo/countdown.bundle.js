@@ -44,8 +44,17 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	var Countdown = __webpack_require__(1);
 
+	document.addEventListener('DOMContentLoaded', function () {
+	  new Countdown({
+	    id: "ds-Countdown",
+	    targetTime: '2017-01-01 00:00:00',
+	    afterEnd() {
+	      alert("Time over !");
+	    }
+	  });
+	}, false);
 
 /***/ },
 /* 1 */
