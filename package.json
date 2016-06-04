@@ -2,7 +2,7 @@
   "name": "ds-countdown",
   "version": "1.0.0",
   "description": "Countdown",
-  "main": "index.js",
+  "main": "lib/countdown.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "watchify lib/countdown.es6.js -v -o ./lib/countdown.bundle.js -t [ babelify --presets [ es2015 ] ]"
