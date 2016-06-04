@@ -1,6 +1,6 @@
 {
   "name": "ds-countdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Countdown",
   "main": "lib/countdown.bundle.js",
   "scripts": {
