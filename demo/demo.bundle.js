@@ -52,6 +52,7 @@
 	  new Countdown({
 	    id: "ds-Countdown",
 	    targetTime: '2017-01-01 00:00:00',
+	    separator: ':',
 	    afterEnd: function afterEnd() {
 	      alert("Time over !");
 	    }
@@ -148,8 +149,8 @@
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      var tplDay = "" + this.timer.day + this.separator;
-	      var tpl = "" + this.timer.hour + this.separator + this.timer.min + this.separator + this.timer.sec;
+	      var tplDay = "<span class=\"ds-Countdown-item ds-Countdown-item--day\">" + this.timer.day + "</span>" + this.separator;
+	      var tpl = "<span class=\"ds-Countdown-item ds-Countdown-item--hour\">" + this.timer.hour + "</span>" + this.separator + "<span class=\"ds-Countdown-item ds-Countdown-item--min\">" + this.timer.min + "</span>" + this.separator + "<span class=\"ds-Countdown-item ds-Countdown-item--sec\">" + this.timer.sec + "</span>";
 
 	      this.el.innerHTML = this.hideDayAtZero() || this.noDay ? tpl : tplDay + tpl;
 	    }
