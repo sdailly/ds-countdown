@@ -4,7 +4,7 @@
   "description": "Countdown",
   "main": "lib/countdown.bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "./node_modules/.bin/webpack",
     "watch": "babel ./lib/countdown.es6.js --watch --presets es2015 --out-file ./lib/countdown.bundle.js",
     "demo": "./node_modules/.bin/webpack"
@@ -38,8 +38,11 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.1",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "jest": "^24.9.0",
+    "jsdom": "^15.2.1",
     "webpack": "^1.13.1"
   }
 }
