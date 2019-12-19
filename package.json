@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sdailly/ds-countdown.git"
+    "url": "git+https://github.com/sdailly/ds-countdown.git"
   },
   "homepage": "https://github.com/sdailly/ds-countdown",
   "bugs": {
@@ -44,5 +44,8 @@
     "jest": "^24.9.0",
     "jsdom": "^15.2.1",
     "webpack": "^1.13.1"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
